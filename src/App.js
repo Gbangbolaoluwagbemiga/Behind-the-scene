@@ -74,7 +74,7 @@ function TabContent({item}) {
       {showDetails && <p>{item.details}</p>}
 
       <div className="tab-actions">
-        <button onClick={() => setShowDetails(h => !h)}>
+        <button onClick={() => setShowDetails(prev => !prev)}>
           {showDetails ? 'Hide' : 'Show'} details
         </button>
 
